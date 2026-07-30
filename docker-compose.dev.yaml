@@ -13,7 +13,7 @@ services:
       - cello-api-engine
 
   cello-postgres:
-    image: postgres:12.0
+    image: postgres:16.8
     container_name: cello-postgres
     restart: unless-stopped
     environment:
@@ -68,7 +68,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - cello-hyperledger-fabric-agent:/cello
     networks:
-      - cello-net
+      cello-net:
+        aliases:
+          - cello-hyperledger-fabric-agent
 
 networks:
   cello-net:

@@ -67,7 +67,7 @@ If environment is prepared, then we can start cello service.
   ```bash
   CONTAINER ID   IMAGE                                   COMMAND                  CREATED         STATUS         PORTS                                       NAMES
   57df1462c7f1   cello/hyperledger-fabric-agent:local    "python manage.py r…"    4 seconds ago   Up 2 seconds   0.0.0.0:5001->8080/tcp, :::5001->8080/tcp   cello-docker-agent
-  04367ab6bd5e   postgres:12.0                           "docker-entrypoint.s…"   4 seconds ago   Up 2 seconds   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   cello-postgres
+  04367ab6bd5e   postgres:16.8                           "docker-entrypoint.s…"   4 seconds ago   Up 2 seconds   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   cello-postgres
   29b56a279893   cello/api-engine:latest                 "/bin/sh -c 'bash /e…"   4 seconds ago   Up 2 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   cello-api-engine
   a272a06d8280   cello/dashboard:latest                  "bash -c 'nginx -g '…"   4 seconds ago   Up 2 seconds   0.0.0.0:8081->8081/tcp, :::8081->8081/tcp   cello-dashboard
   ```
